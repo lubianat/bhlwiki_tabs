@@ -65,7 +65,7 @@
                 ? '<span style="color: green; font-weight: bold;">Public Domain</span>'
                 : slide.license
                 }`;
-            license.innerHTML += `<br><a href="https://commons.wikimedia.org/wiki/File/${slide.src.split('/').pop()}" target="_blank">[View on Commons]</a>`;
+            license.innerHTML += `<br><a href="https://commons.wikimedia.org/wiki/File:${slide.src.split('/').pop()}" target="_blank">[View on Commons]</a>`;
 
             metadataDiv.classList.remove("d-none");
         } catch (error) {
