@@ -14,8 +14,64 @@ body {
 
 
 #info-box {
-    position: absolute;
+    position: fixed;
+    /* Fixed to stay in view */
     bottom: 20px;
+    /* 20px from the bottom */
     left: 20px;
+    /* 20px from the left */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent black */
+    color: white;
+    padding: 15px;
     border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    /* Subtle shadow */
+    width: 300px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+#info-box a {
+    color: #1e90ff;
+    /* Link color */
+    text-decoration: none;
+}
+
+#info-box a:hover {
+    text-decoration: underline;
+}
+
+#info-box p {
+    margin: 8px 0;
+}
+
+#loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    z-index: 100;
+    /* Ensure it stays above other elements */
+}
+
+.loader {
+    font-family: 'Poppins', sans-serif;
+    animation: fade 1.5s infinite;
+}
+
+@keyframes fade {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
 }

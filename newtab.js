@@ -1,20 +1,15 @@
 (async function () {
     const background = document.getElementById("background");
+    const loader = document.getElementById("loader");
     const author = document.getElementById("author");
     const publication = document.getElementById("publication");
     const year = document.getElementById("year");
     const license = document.getElementById("license");
-    const loadingMessage = document.getElementById("loading-message");
     const metadataDiv = document.getElementById("metadata");
 
     function logError(message, error) {
         console.error(message, error);
-        loadingMessage.textContent = `${message}: ${error.message || error}`;
-        loadingMessage.classList.remove("d-none");
-    }
-
-    function getRandomItem(arr) {
-        return arr[Math.floor(Math.random() * arr.length)];
+        loader.textContent = `${message}: ${error.message || error}`;
     }
 
     function resizeImage(img) {
@@ -45,7 +40,8 @@
 
     async function displaySlide(slide) {
         try {
-            // Load the image
+            loader.style.display = "block"; // Show the loader
+
             const img = await loadImage(slide);
 
             // Clear the previous image
@@ -55,25 +51,33 @@
             // Resize the image
             resizeImage(img);
 
-            // Update metadata
-            author.textContent = `Author: ${slide.author}`;
-            publication.textContent = `Publication: ${slide.publication}`;
+            // Update metadata with links
+            author.innerHTML = `Author: ${slide.author_qid
+                    ? `<a href="https://www.wikidata.org/wiki/${slide.author_qid}" target="_blank">${slide.author}</a>`
+                    : slide.author
+                }`;
+            publication.innerHTML = `Work: ${slide.publication_qid
+                    ? `<a href="https://www.wikidata.org/wiki/${slide.publication_qid}" target="_blank">${slide.publication}</a>`
+                    : slide.publication
+                }`;
             year.textContent = `Year: ${slide.year}`;
-            license.textContent = `License: ${slide.license}`;
+            license.innerHTML = `License: ${slide.license === 'public_domain'
+                    ? '<span style="color: green; font-weight: bold;">Public Domain</span>'
+                    : slide.license
+                }`;
+            license.innerHTML += `<br><a href="https://commons.wikimedia.org/wiki/File/${slide.src.split('/').pop()}" target="_blank">View on Commons</a>`;
+
             metadataDiv.classList.remove("d-none");
         } catch (error) {
             logError("Failed to load slide", error);
+        } finally {
+            loader.style.display = "none"; // Hide the loader
         }
     }
 
     try {
         console.log("Starting Commons New Tab...");
 
-        // Display loading message
-        loadingMessage.textContent = "Loading data...";
-        loadingMessage.classList.remove("d-none");
-
-        // Fetch and parse YAML file
         const response = await fetch("assets/data.yaml", { credentials: 'omit' });
 
         if (!response.ok) {
@@ -83,12 +87,13 @@
         const yamlText = await response.text();
         const data = jsyaml.load(yamlText);
 
-        // Prepare slides
         const slides = data.categories.flatMap(category =>
             category.files.map(file => ({
                 src: `https://commons.wikimedia.org/wiki/Special:FilePath/${file}`,
                 author: category.author_name,
+                author_qid: category.author_qid,
                 publication: category.name,
+                publication_qid: category.publication_qid,
                 year: category.year_of_publication,
                 license: category.license,
             }))
@@ -100,21 +105,13 @@
 
         console.log("Slides prepared:", slides);
 
-        // Start the slideshow
-        let currentIndex = 0;
-        async function showNextSlide() {
-            await displaySlide(slides[currentIndex]);
-            currentIndex = (currentIndex + 1) % slides.length;
-            setTimeout(showNextSlide, 10000); // 10 seconds per slide
-        }
-
-        showNextSlide();
-        loadingMessage.classList.add("d-none");
+        // Display a random slide
+        const randomSlide = slides[Math.floor(Math.random() * slides.length)];
+        displaySlide(randomSlide);
     } catch (error) {
         logError("Error initializing Commons New Tab", error);
     }
 
-    // Resize image on window resize
     window.addEventListener("resize", () => {
         const img = background.querySelector("img");
         if (img) resizeImage(img);
