@@ -53,19 +53,19 @@
 
             // Update metadata with links
             author.innerHTML = `Author: ${slide.author_qid
-                    ? `<a href="https://www.wikidata.org/wiki/${slide.author_qid}" target="_blank">${slide.author}</a>`
-                    : slide.author
+                ? `<a href="https://www.wikidata.org/wiki/${slide.author_qid}" target="_blank">${slide.author}</a>`
+                : slide.author
                 }`;
             publication.innerHTML = `Work: ${slide.publication_qid
-                    ? `<a href="https://www.wikidata.org/wiki/${slide.publication_qid}" target="_blank">${slide.publication}</a>`
-                    : slide.publication
+                ? `<a href="https://www.wikidata.org/wiki/${slide.publication_qid}" target="_blank">${slide.publication}</a>`
+                : slide.publication
                 }`;
             year.textContent = `Year: ${slide.year}`;
             license.innerHTML = `License: ${slide.license === 'public_domain'
-                    ? '<span style="color: green; font-weight: bold;">Public Domain</span>'
-                    : slide.license
+                ? '<span style="color: green; font-weight: bold;">Public Domain</span>'
+                : slide.license
                 }`;
-            license.innerHTML += `<br><a href="https://commons.wikimedia.org/wiki/File/${slide.src.split('/').pop()}" target="_blank">View on Commons</a>`;
+            license.innerHTML += `<br><a href="https://commons.wikimedia.org/wiki/File/${slide.src.split('/').pop()}" target="_blank">[View on Commons]</a>`;
 
             metadataDiv.classList.remove("d-none");
         } catch (error) {

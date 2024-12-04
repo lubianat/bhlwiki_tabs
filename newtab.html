@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commons New Tab</title>
+    <title>BHL-Wiki Tab</title>
     <link rel="stylesheet" href="newtab.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -14,6 +14,7 @@
 <body>
     <div id="loader" class="loader">Loading...</div>
     <div id="background"></div>
+    <div id="background"></div>
     <div id="info-box" class="card text-white bg-dark p-3">
         <p id="loading-message" class="text-center d-none">Loading...</p>
         <div id="metadata" class="d-none">
@@ -21,9 +22,26 @@
             <p id="publication" class="mb-2"></p>
             <p id="year" class="mb-2"></p>
             <p id="license" class="mb-2"></p>
+
+            <div id="github-icon">
+                <a href="https://github.com/lubianat/bhlwiki_tabs" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg"
+                        alt="GitHub Logo">
+                </a>
+            </div>
+
         </div>
     </div>
-    <script src="lib/browser-polyfill.js"></script>
+
+    <div id="support-box" style="font-size: 12px;">
+        Learn more about the <a href="https://meta.wikimedia.org/wiki/BHL" target="_blank">
+            BHL-Wiki partnership</a>.
+
+    </div>
+
+
+    <script src=" lib/browser-polyfill.js">
+    </script>
     <script src="lib/js-yaml.min.js"></script>
     <script src="newtab.js"></script>
 </body>
