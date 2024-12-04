@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commons New Tab</title>
+    <link rel="stylesheet" href="newtab.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="background"></div>
+    <div id="info-box" class="card text-white bg-dark p-3" style="width: 18rem; opacity: 0.8;">
+        <p id="loading-message" class="text-center">Loading...</p>
+        <div id="metadata" class="d-none">
+            <p id="author" class="mb-2"></p>
+            <p id="publication" class="mb-2"></p>
+            <p id="year" class="mb-2"></p>
+            <p id="license" class="mb-2"></p>
+        </div>
+    </div>
+    <script src="lib/browser-polyfill.js"></script>
+    <script src="lib/js-yaml.min.js"></script>
+    <script src="newtab.js"></script>
+</body>
+
+</html>

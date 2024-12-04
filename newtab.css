@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+#background img {
+    object-fit: cover;
+}
+
+
+#info-box {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 8px;
+}

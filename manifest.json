@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Commons - Biodiversity Heritage Library New Tab",
+    "version": "1.0",
+    "description": "Show a random file from a set of selected Biodiversity Heritage Library files on Commons new tabs with licensing information.",
+    "chrome_url_overrides": {
+        "newtab": "newtab.html"
+    },
+    "permissions": [],
+    "icons": {
+        "48": "assets/icon-48.png",
+        "128": "assets/icon-128.png"
+    },
+    "action": {
+        "default_title": "Commons New Tab"
+    }
+}
