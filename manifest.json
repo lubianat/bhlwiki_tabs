@@ -3,6 +3,12 @@
     "name": "Biodiversity Heritage Library - Wiki Tabs",
     "version": "1.0.0",
     "description": "Show a random image from a set of selected Biodiversity Heritage Library files on Wikimedia Commons on new tabs.",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "bhl-wiki-tabs@example.com",
+            "strict_min_version": "109.0"
+        }
+    },
     "chrome_url_overrides": {
         "newtab": "newtab.html"
     },
