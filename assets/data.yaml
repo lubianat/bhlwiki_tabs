@@ -1,4 +1,112 @@
 categories:
+  - name: Kunstformen der Natur
+    author_name: Ernst Haeckel
+    author_qid: Q48246
+    publication_name:  Kunstformen der Natur
+    publication_qid: Q1423459
+    year_of_publication: 1904
+    license: public_domain
+    files:
+     - Kunstformen der Natur (Tafel 1) BHL47388030.jpg
+     - Kunstformen der Natur (Tafel 2) BHL47388024.jpg
+     - Kunstformen der Natur (Tafel 3) BHL47388020.jpg
+     - Kunstformen der Natur (Tafel 4) BHL47388016.jpg
+     - Kunstformen der Natur (Tafel 5) BHL47388012.jpg
+     - Kunstformen der Natur (Tafel 6) BHL47388006.jpg
+     - Kunstformen der Natur (Tafel 7) BHL47388002.jpg
+     - Kunstformen der Natur (Tafel 8) BHL47387998.jpg
+     - Kunstformen der Natur (Tafel 9) BHL47387994.jpg
+     - Kunstformen der Natur (Tafel 10) BHL47387966.jpg
+     - Kunstformen der Natur (Tafel 11) BHL47387976.jpg
+     - Kunstformen der Natur (Tafel 12) BHL47387980.jpg
+     - Kunstformen der Natur (Tafel 13) BHL47387984.jpg
+     - Kunstformen der Natur (Tafel 14) BHL47387988.jpg
+     - Kunstformen der Natur (Tafel 15) BHL47387992.jpg
+     - Kunstformen der Natur (Tafel 16) BHL47388049.jpg
+     - Kunstformen der Natur (Tafel 17) BHL47388053.jpg
+     - Kunstformen der Natur (Tafel 18) BHL47388057.jpg
+     - Kunstformen der Natur (Tafel 19) BHL47388061.jpg
+     - Kunstformen der Natur (Tafel 20) BHL47388065.jpg
+     - Kunstformen der Natur (Tafel 21) BHL47388075.jpg
+     - Kunstformen der Natur (Tafel 22) BHL47388079.jpg
+     - Kunstformen der Natur (Tafel 23) BHL47388083.jpg
+     - Kunstformen der Natur (Tafel 24) BHL47388087.jpg
+     - Kunstformen der Natur (Tafel 25) BHL47388091.jpg
+     - Kunstformen der Natur (Tafel 26) BHL47388095.jpg
+     - Kunstformen der Natur (Tafel 27) BHL47388099.jpg
+     - Kunstformen der Natur (Tafel 28) BHL47388103.jpg
+     - Kunstformen der Natur (Tafel 29) BHL47388109.jpg
+     - Kunstformen der Natur (Tafel 30) BHL47388115.jpg
+     - Kunstformen der Natur (Tafel 31) BHL47388125.jpg
+     - Kunstformen der Natur (Tafel 32) BHL47388129.jpg
+     - Kunstformen der Natur (Tafel 33) BHL47388135.jpg
+     - Kunstformen der Natur (Tafel 34) BHL47388139.jpg
+     - Kunstformen der Natur (Tafel 35) BHL47388143.jpg
+     - Kunstformen der Natur (Tafel 36) BHL47388147.jpg
+     - Kunstformen der Natur (Tafel 37) BHL47388151.jpg
+     - Kunstformen der Natur (Tafel 38) BHL47388155.jpg
+     - Kunstformen der Natur (Tafel 39) BHL47388161.jpg
+     - Kunstformen der Natur (Tafel 40) BHL47388165.jpg
+     - Kunstformen der Natur (Tafel 41) BHL47388177.jpg
+     - Kunstformen der Natur (Tafel 42) BHL47388181.jpg
+     - Kunstformen der Natur (Tafel 43) BHL47388185.jpg
+     - Kunstformen der Natur (Tafel 44) BHL47388191.jpg
+     - Kunstformen der Natur (Tafel 45) BHL47388195.jpg
+     - Kunstformen der Natur (Tafel 46) BHL47388199.jpg
+     - Kunstformen der Natur (Tafel 47) BHL47388205.jpg
+     - Kunstformen der Natur (Tafel 48) BHL47388209.jpg
+     - Kunstformen der Natur (Tafel 49) BHL47388215.jpg
+     - Kunstformen der Natur (Tafel 50) BHL47388221.jpg
+     - Kunstformen der Natur (Tafel 51) BHL47388231.jpg
+     - Kunstformen der Natur (Tafel 52) BHL47388237.jpg
+     - Kunstformen der Natur (Tafel 53) BHL47388243.jpg
+     - Kunstformen der Natur (Tafel 54) BHL47388247.jpg
+     - Kunstformen der Natur (Tafel 55) BHL47388253.jpg
+     - Kunstformen der Natur (Tafel 56) BHL47388257.jpg
+     - Kunstformen der Natur (Tafel 57) BHL47388263.jpg
+     - Kunstformen der Natur (Tafel 58) BHL47388269.jpg
+     - Kunstformen der Natur (Tafel 59) BHL47388273.jpg
+     - Kunstformen der Natur (Tafel 60) BHL47388279.jpg
+     - Kunstformen der Natur (Tafel 61) BHL47388291.jpg
+     - Kunstformen der Natur (Tafel 62) BHL47388295.jpg
+     - Kunstformen der Natur (Tafel 63) BHL47388299.jpg
+     - Kunstformen der Natur (Tafel 64) BHL47388303.jpg
+     - Kunstformen der Natur (Tafel 65) BHL47388307.jpg
+     - Kunstformen der Natur (Tafel 66) BHL47388311.jpg
+     - Kunstformen der Natur (Tafel 67) BHL47388315.jpg
+     - Kunstformen der Natur (Tafel 68) BHL47388319.jpg
+     - Kunstformen der Natur (Tafel 69) BHL47388325.jpg
+     - Kunstformen der Natur (Tafel 70) BHL47388329.jpg
+     - Kunstformen der Natur (Tafel 71) BHL47388339.jpg
+     - Kunstformen der Natur (Tafel 72) BHL47388345.jpg
+     - Kunstformen der Natur (Tafel 73) BHL47388349.jpg
+     - Kunstformen der Natur (Tafel 74) BHL47388355.jpg
+     - Kunstformen der Natur (Tafel 75) BHL47388361.jpg
+     - Kunstformen der Natur (Tafel 76) BHL47388365.jpg
+     - Kunstformen der Natur (Tafel 77) BHL47388369.jpg
+     - Kunstformen der Natur (Tafel 78) BHL47388373.jpg
+     - Kunstformen der Natur (Tafel 79) BHL47388377.jpg
+     - Kunstformen der Natur (Tafel 80) BHL47388383.jpg
+     - Kunstformen der Natur (Tafel 81) BHL47388395.jpg
+     - Kunstformen der Natur (Tafel 82) BHL47388399.jpg
+     - Kunstformen der Natur (Tafel 83) BHL47388405.jpg
+     - Kunstformen der Natur (Tafel 84) BHL47388411.jpg
+     - Kunstformen der Natur (Tafel 85) BHL47388417.jpg
+     - Kunstformen der Natur (Tafel 86) BHL47388421.jpg
+     - Kunstformen der Natur (Tafel 87) BHL47388427.jpg
+     - Kunstformen der Natur (Tafel 88) BHL47388431.jpg
+     - Kunstformen der Natur (Tafel 89) BHL47388435.jpg
+     - Kunstformen der Natur (Tafel 90) BHL47388441.jpg
+     - Kunstformen der Natur (Tafel 91) BHL47388453.jpg
+     - Kunstformen der Natur (Tafel 92) BHL47388457.jpg
+     - Kunstformen der Natur (Tafel 93) BHL47388463.jpg
+     - Kunstformen der Natur (Tafel 94) BHL47388467.jpg
+     - Kunstformen der Natur (Tafel 95) BHL47388473.jpg
+     - Kunstformen der Natur (Tafel 96) BHL47388477.jpg
+     - Kunstformen der Natur (Tafel 97) BHL47388483.jpg
+     - Kunstformen der Natur (Tafel 98) BHL47388487.jpg
+     - Kunstformen der Natur (Tafel 99) BHL47388491.jpg
+     - Kunstformen der Natur (Tafel 100) BHL47388495.jpg
   - name: Álbum de Aves Amazônicas
     author_name: Emil August Goeldi
     author_qid: Q115643

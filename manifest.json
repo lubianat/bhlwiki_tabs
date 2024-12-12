@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Biodiversity Heritage Library - Wiki Tabs",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Show a random image from a set of selected Biodiversity Heritage Library files on Wikimedia Commons on new tabs.",
     "browser_specific_settings": {
         "gecko": {
