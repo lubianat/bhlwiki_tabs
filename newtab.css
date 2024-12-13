@@ -64,6 +64,26 @@ body {
     animation: fade 1.5s infinite;
 }
 
+/* Dark mode background for the entire body */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+    }
+
+    #background {
+        background-color: black;
+        /* Ensure black background when no image is loaded */
+    }
+
+    #loader {
+        color: white;
+        /* White text for the loader */
+        background-color: black;
+        /* Black box background */
+    }
+}
+
+
 @keyframes fade {
 
     0%,

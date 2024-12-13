@@ -1,6 +1,31 @@
 (async function () {
-    const background = document.getElementById("background");
-    const loader = document.getElementById("loader");
+    (async function () {
+        const background = document.getElementById("background");
+        const loader = document.getElementById("loader");
+
+        // Function to detect dark mode preference
+        function isDarkMode() {
+            return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
+
+        function applyDarkMode() {
+            if (isDarkMode()) {
+                document.body.style.backgroundColor = "black"; // Set full background to black
+                background.style.backgroundColor = "black"; // Ensure black background on #background
+                loader.style.color = "white"; // Text for loader
+                loader.style.backgroundColor = "black"; // Loader box background
+            }
+        }
+
+        // Apply dark mode styles on page load
+        applyDarkMode();
+
+        // Reapply styles on system theme change
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyDarkMode);
+
+        // (Rest of your script remains the same)
+    })();
+
     const author = document.getElementById("author");
     const publication = document.getElementById("publication");
     const year = document.getElementById("year");
